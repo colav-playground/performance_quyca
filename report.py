@@ -353,7 +353,6 @@ def main():
     
     print("📋 Generando reporte...")
     report = generate_report(df, stats, endpoint_stats, keyword_stats, type_stats, slowest)
-    print(report)
     
     # Guardar reporte en archivo
     with open('api_performance_report.txt', 'w', encoding='utf-8') as f:
