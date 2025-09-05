@@ -1,0 +1,113 @@
+======================================================================
+REPORTE DE ANÁLISIS DE PERFORMANCE API
+======================================================================
+
+📊 ESTADÍSTICAS GENERALES:
+  • Total de requests: 153
+  • Endpoints únicos: 22
+  • Tiempo promedio: 1305.13 ms
+  • Tiempo mediano: 33.00 ms
+  • Desviación estándar: 3104.49 ms
+  • Tiempo mínimo: 14.00 ms
+  • Tiempo máximo: 24600.00 ms
+  • Percentil 95: 7102.00 ms
+  • Percentil 99: 10725.12 ms
+
+🐌 TOP 15 ENDPOINTS MÁS LENTOS:
+   1. search/works?keywords=data
+      Tiempo: 24600.00 ms
+   2. search/person?keywords=garcia
+      Tiempo: 11736.00 ms
+   3. search/person?keywords=garcia
+      Tiempo: 9792.00 ms
+   4. person/A5105622035/research/products
+      Tiempo: 9549.00 ms
+   5. search/person?keywords=garcia
+      Tiempo: 9108.00 ms
+   6. person/A5105622035/research/products
+      Tiempo: 9049.00 ms
+   7. affiliation/institution/04j43p132/research/products
+      Tiempo: 8624.00 ms
+   8. person/A5105622035/research/products
+      Tiempo: 7255.00 ms
+   9. person/A5112693177/research/products
+      Tiempo: 7000.00 ms
+  10. person/A5112693177/research/products
+      Tiempo: 6651.00 ms
+  11. person/A5105622035/research/products
+      Tiempo: 6191.00 ms
+  12. person/A5105622035/research/products
+      Tiempo: 6149.00 ms
+  13. search/works?keywords=salud
+      Tiempo: 5997.00 ms
+  14. person/A5105622035/research/products
+      Tiempo: 5884.00 ms
+  15. person/A5112693177/research/products
+      Tiempo: 5598.00 ms
+
+🏷️  PERFORMANCE POR TIPO DE ENDPOINT:
+  • SEARCH:
+    - Requests: 90.0
+    - Tiempo promedio: 2195.20 ms
+    - Tiempo mediano: 161.00 ms
+  • APC:
+    - Requests: 42.0
+    - Tiempo promedio: 38.00 ms
+    - Tiempo mediano: 28.50 ms
+  • PERSON:
+    - Requests: 21.0
+    - Tiempo promedio: 24.90 ms
+    - Tiempo mediano: 26.00 ms
+
+📞 TOP 10 ENDPOINTS MÁS LLAMADOS:
+   1. person/A5105622035/research/products
+      Llamadas: 7.0, Tiempo promedio: 7077.00 ms
+   2. search/person
+      Llamadas: 7.0, Tiempo promedio: 5996.14 ms
+   3. search/works
+      Llamadas: 7.0, Tiempo promedio: 5654.57 ms
+   4. person/A5112693177/research/products
+      Llamadas: 7.0, Tiempo promedio: 5475.00 ms
+   5. affiliation/institution/04j43p132/research/product...
+      Llamadas: 7.0, Tiempo promedio: 1903.57 ms
+   6. apc/search
+      Llamadas: 7.0, Tiempo promedio: 1055.71 ms
+   7. affiliation/institution/027nnzv91/research/product...
+      Llamadas: 7.0, Tiempo promedio: 871.29 ms
+   8. apc/affiliation/027nnzv91
+      Llamadas: 7.0, Tiempo promedio: 94.71 ms
+   9. person/0000000347185957/research/products
+      Llamadas: 7.0, Tiempo promedio: 46.86 ms
+  10. person/A5112693177/research/news
+      Llamadas: 7.0, Tiempo promedio: 33.86 ms
+
+🔍 ANÁLISIS DE KEYWORDS DE BÚSQUEDA:
+  Total de búsquedas: 21
+  Keywords únicas: 11
+
+  Top keywords más lentas:
+    1. 'data': 24600.00 ms promedio (1.0 búsquedas)
+    2. 'garcia': 10212.00 ms promedio (3.0 búsquedas)
+    3. 'salud': 5997.00 ms promedio (1.0 búsquedas)
+    4. 'alejandra': 5163.00 ms promedio (1.0 búsquedas)
+    5. '2000': 3456.00 ms promedio (2.0 búsquedas)
+
+⏱️  DISTRIBUCIÓN DE TIEMPOS DE RESPUESTA:
+  • 0-50ms: 95 requests (62.1%)
+  • 50-100ms: 10 requests (6.5%)
+  • 100-500ms: 7 requests (4.6%)
+  • 500ms-1s: 11 requests (7.2%)
+  • 1-5s: 11 requests (7.2%)
+  • 5s+: 19 requests (12.4%)
+
+💡 RECOMENDACIONES:
+  🚨 Endpoints que requieren optimización (>2x promedio):
+    - person/A5105622035/research/products: 7077.00 ms promedio
+    - search/person: 5996.14 ms promedio
+    - search/works: 5654.57 ms promedio
+    - person/A5112693177/research/products: 5475.00 ms promedio
+  🔍 Keywords de búsqueda problemáticas (>1s):
+    - 'data': 24600.00 ms
+    - 'garcia': 10212.00 ms
+    - 'salud': 5997.00 ms
+  📊 Profundidad de endpoint más lenta: 2 niveles (2130.20 ms promedio)
